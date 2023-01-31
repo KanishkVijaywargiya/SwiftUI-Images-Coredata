@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ImagesCoreDataApp: App {
+    let persistenceController = PersistenceController.shared.container.viewContext
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GridView()
+                .environmentObject(ContainerViewModel(context: persistenceController))
         }
     }
 }

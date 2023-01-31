@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		04C3330529890DD600127D60 /* ImagesCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */; };
-		04C3330729890DD600127D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3330629890DD600127D60 /* ContentView.swift */; };
+		04C3330729890DD600127D60 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3330629890DD600127D60 /* GridView.swift */; };
 		04C3330929890DDA00127D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3330829890DDA00127D60 /* Assets.xcassets */; };
 		04C3330C29890DDA00127D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3330B29890DDA00127D60 /* Preview Assets.xcassets */; };
+		04C3331729890F7B00127D60 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C3331629890F7B00127D60 /* Launch Screen.storyboard */; };
+		04C3331B2989112000127D60 /* MyImagesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04C333192989112000127D60 /* MyImagesDataModel.xcdatamodeld */; };
+		04C3331D298911AC00127D60 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3331C298911AC00127D60 /* Persistence.swift */; };
+		04C333202989140000127D60 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3331F2989140000127D60 /* ContainerViewModel.swift */; };
+		04C33322298915C400127D60 /* MyImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C33321298915C400127D60 /* MyImage+Extension.swift */; };
+		04C3332729893A0900127D60 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3332629893A0900127D60 /* Crop.swift */; };
+		04C3332929893A2500127D60 /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3332829893A2500127D60 /* CustomImagePicker.swift */; };
+		04F9E1AC2989507E00D16A83 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9E1AB2989507E00D16A83 /* FormViewModel.swift */; };
+		04F9E1AE2989509300D16A83 /* ImageFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9E1AD2989509300D16A83 /* ImageFormView.swift */; };
+		04F9E1B1298950C500D16A83 /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9E1B0298950C500D16A83 /* FormType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04C3330129890DD600127D60 /* ImagesCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagesCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCoreDataApp.swift; sourceTree = "<group>"; };
-		04C3330629890DD600127D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04C3330629890DD600127D60 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		04C3330829890DDA00127D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C3330B29890DDA00127D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04C3331629890F7B00127D60 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		04C3331A2989112000127D60 /* MyImagesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyImagesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		04C3331C298911AC00127D60 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		04C3331F2989140000127D60 /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
+		04C33321298915C400127D60 /* MyImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyImage+Extension.swift"; sourceTree = "<group>"; };
+		04C3332629893A0900127D60 /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		04C3332829893A2500127D60 /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
+		04F9E1AB2989507E00D16A83 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		04F9E1AD2989509300D16A83 /* ImageFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFormView.swift; sourceTree = "<group>"; };
+		04F9E1B0298950C500D16A83 /* FormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */,
-				04C3330629890DD600127D60 /* ContentView.swift */,
+				04C3331429890DF900127D60 /* Helper */,
+				04F9E1AF298950B900D16A83 /* Model */,
+				04C3331229890DEB00127D60 /* View */,
+				04C3331E298913DE00127D60 /* ViewModel */,
+				04C3331329890DF100127D60 /* CoreData */,
 				04C3330829890DDA00127D60 /* Assets.xcassets */,
+				04C3331629890F7B00127D60 /* Launch Screen.storyboard */,
 				04C3330A29890DDA00127D60 /* Preview Content */,
 			);
 			path = ImagesCoreData;
@@ -65,6 +90,75 @@
 				04C3330B29890DDA00127D60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04C3331229890DEB00127D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C3330629890DD600127D60 /* GridView.swift */,
+				04F9E1AD2989509300D16A83 /* ImageFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C3331329890DF100127D60 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				04C333192989112000127D60 /* MyImagesDataModel.xcdatamodeld */,
+				04C3331C298911AC00127D60 /* Persistence.swift */,
+				04C33321298915C400127D60 /* MyImage+Extension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		04C3331429890DF900127D60 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04C33323298939E200127D60 /* ImageCroppingTool */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04C3331E298913DE00127D60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04C3331F2989140000127D60 /* ContainerViewModel.swift */,
+				04F9E1AB2989507E00D16A83 /* FormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04C33323298939E200127D60 /* ImageCroppingTool */ = {
+			isa = PBXGroup;
+			children = (
+				04C33325298939ED00127D60 /* Model */,
+				04C33324298939E900127D60 /* View */,
+			);
+			path = ImageCroppingTool;
+			sourceTree = "<group>";
+		};
+		04C33324298939E900127D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C3332829893A2500127D60 /* CustomImagePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C33325298939ED00127D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C3332629893A0900127D60 /* Crop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F9E1AF298950B900D16A83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F9E1B0298950C500D16A83 /* FormType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C3331729890F7B00127D60 /* Launch Screen.storyboard in Resources */,
 				04C3330C29890DDA00127D60 /* Preview Assets.xcassets in Resources */,
 				04C3330929890DDA00127D60 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +232,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C3330729890DD600127D60 /* ContentView.swift in Sources */,
+				04F9E1B1298950C500D16A83 /* FormType.swift in Sources */,
+				04C3332729893A0900127D60 /* Crop.swift in Sources */,
+				04C3330729890DD600127D60 /* GridView.swift in Sources */,
+				04C3331D298911AC00127D60 /* Persistence.swift in Sources */,
+				04F9E1AC2989507E00D16A83 /* FormViewModel.swift in Sources */,
+				04C3331B2989112000127D60 /* MyImagesDataModel.xcdatamodeld in Sources */,
+				04C33322298915C400127D60 /* MyImage+Extension.swift in Sources */,
+				04F9E1AE2989509300D16A83 /* ImageFormView.swift in Sources */,
+				04C333202989140000127D60 /* ContainerViewModel.swift in Sources */,
+				04C3332929893A2500127D60 /* CustomImagePicker.swift in Sources */,
 				04C3330529890DD600127D60 /* ImagesCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +407,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +445,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04C333192989112000127D60 /* MyImagesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04C3331A2989112000127D60 /* MyImagesDataModel.xcdatamodel */,
+			);
+			currentVersion = 04C3331A2989112000127D60 /* MyImagesDataModel.xcdatamodel */;
+			path = MyImagesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04C332F929890DD600127D60 /* Project object */;
 }
