@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ImageFormView: View {
-    @State private var showPicker: Bool = false
-    @State private var croppedImage: UIImage?
+    @EnvironmentObject private var containerVM: ContainerViewModel
+    @Environment(\.dismiss) var dismiss
     
     @ObservedObject var formVM: FormViewModel
-    @Environment(\.dismiss) var dismiss
+    
+    @State private var showPicker: Bool = false
+    @State private var croppedImage: UIImage?
     
     var body: some View {
         NavigationStack {
@@ -37,6 +39,16 @@ struct ImageFormView: View {
                     }
                     
                     Button {
+                        if formVM.isUpdating {
+                            if let id = formVM.id,
+                               let selectedObject = containerVM.imagesEntity.first(where: {$0.id == id}) {
+                                selectedObject.name = formVM.name
+                                FileManager().saveImage(with: id, image: formVM.uiImage)
+                                containerVM.saveData()
+                            }
+                        } else {
+                            containerVM.createNewObject(name: formVM.name, image: formVM.uiImage)
+                        }
                         dismiss()
                     } label: {
                         Image(systemName: "checkmark")
@@ -57,9 +69,13 @@ struct ImageFormView: View {
                     }
                     .buttonStyle(.bordered)
                 }
-                if !formVM.isUpdating {
+                if formVM.isUpdating {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
+                            if let selectedObject = containerVM.imagesEntity.first(where: {$0.id == formVM.id}) {
+                                FileManager().deleteImage(with: selectedObject.imageID)
+                                containerVM.deleteObject(selectedObject)
+                            }
                             dismiss()
                         } label: {
                             Image(systemName: "trash").foregroundColor(.red)
@@ -70,20 +86,22 @@ struct ImageFormView: View {
                 }
             }
         }
+        .cropImagePicker(
+            options: [.circle, .rectangle, .square, .custom(.init(width: 200, height: 200))],
+            show: $showPicker,
+            croppedImage: $croppedImage)
         .onChange(of: croppedImage) { newImage in
             if let newImage {
                 formVM.uiImage = newImage
             }
         }
-        .cropImagePicker(
-            options: [.circle, .rectangle, .square, .custom(.init(width: 200, height: 200))],
-            show: $showPicker,
-            croppedImage: $croppedImage)
     }
 }
 
 struct ImageFormView_Previews: PreviewProvider {
     static var previews: some View {
+        let persistenceController = PersistenceController.shared.container.viewContext
         ImageFormView(formVM: FormViewModel(UIImage(systemName: "photo")!))
+            .environmentObject(ContainerViewModel(context: persistenceController))
     }
 }

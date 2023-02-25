@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//associated enum type, we use parameters in cases of enum
 enum FormType: Identifiable, View {
     case new(UIImage)
     case update(MyImage)

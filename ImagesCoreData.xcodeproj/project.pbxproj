@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0464844C29A9FF320000B20C /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464844B29A9FF320000B20C /* FileManager+Extension.swift */; };
 		04C3330529890DD600127D60 /* ImagesCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */; };
 		04C3330729890DD600127D60 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3330629890DD600127D60 /* GridView.swift */; };
 		04C3330929890DDA00127D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3330829890DDA00127D60 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0464844B29A9FF320000B20C /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		04C3330129890DD600127D60 /* ImagesCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagesCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCoreDataApp.swift; sourceTree = "<group>"; };
 		04C3330629890DD600127D60 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049C792E29A9FD1800911B5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0464844B29A9FF320000B20C /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04C332F829890DD600127D60 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				04C3330429890DD600127D60 /* ImagesCoreDataApp.swift */,
+				049C792E29A9FD1800911B5E /* Extensions */,
 				04C3331429890DF900127D60 /* Helper */,
 				04F9E1AF298950B900D16A83 /* Model */,
 				04C3331229890DEB00127D60 /* View */,
@@ -237,6 +248,7 @@
 				04C3330729890DD600127D60 /* GridView.swift in Sources */,
 				04C3331D298911AC00127D60 /* Persistence.swift in Sources */,
 				04F9E1AC2989507E00D16A83 /* FormViewModel.swift in Sources */,
+				0464844C29A9FF320000B20C /* FileManager+Extension.swift in Sources */,
 				04C3331B2989112000127D60 /* MyImagesDataModel.xcdatamodeld in Sources */,
 				04C33322298915C400127D60 /* MyImage+Extension.swift in Sources */,
 				04F9E1AE2989509300D16A83 /* ImageFormView.swift in Sources */,

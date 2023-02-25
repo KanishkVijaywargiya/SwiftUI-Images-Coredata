@@ -15,6 +15,9 @@ struct ImagesCoreDataApp: App {
         WindowGroup {
             GridView()
                 .environmentObject(ContainerViewModel(context: persistenceController))
+                .onAppear {
+                    print(URL.documentsDirectory.path(percentEncoded: true))
+                }
         }
     }
 }
